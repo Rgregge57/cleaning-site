@@ -2,7 +2,7 @@
 
 /* utiltiy styles */
 :root {
-  --primary-color: #0093e9;
+  --primary-color: #0097b2;
   --secondary-color: #1faf26;
 }
 
@@ -31,6 +31,7 @@ a {
   color: #fff;
   padding: 0.6rem 0.8rem;
   border-radius: 5px;
+  font-size: 1.2rem;
 }
 
 
@@ -127,8 +128,16 @@ header {
 
 .nav a {
   text-decoration: none;
-  padding: 2rem;
+  padding:2rem;
   color: #fff;
+}
+
+.nav a:hover{
+  color: var(--primary-color);
+  border-right: var(--primary-color) 2px solid;
+  /* background-color: #1faf26; */
+  height: fit-content;
+ 
 }
 
 .nav img {
