@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rowdies&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Courgette&display=swap');
 
 /* utiltiy styles */
 :root {
   --primary-color: #0097b2;
-  --secondary-color: #1faf26;
+  --secondary-color:  #375873;;
 }
 
 .container {
@@ -28,29 +28,38 @@ a {
  .btn {
   display: inline-block;
   background: var(--primary-color);
+  border: 2px solid #fff;
   color: #fff;
   padding: 0.6rem 0.8rem;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  border-radius: 25px;
+  font-size: 1.4rem;
+}
+ .btn-dark {
+  display: inline-block;
+  background: var(--secondary-color);
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 25px;
+  font-size: 1.4rem;
 }
 
 
 .btn:hover {
-  transform: scale(1.1);
+  background-color: var(--secondary-color);
   transition: 0.5s;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Rowdies";
+.btn-dark:hover{
+  background-color: var(--primary-color);
+  transition: 0.5s;
 }
+
 
 .title {
   font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 0 0 5px #000;
+  color: var(--secondary-color);
+  
 }
 
 section {
@@ -114,7 +123,7 @@ header {
 }
 
 
-/* navbar */
+/* navbar and header section */
 
 .nav {
   height: 20vh;
@@ -141,8 +150,13 @@ header {
 }
 
 .nav img {
-  border-radius: 50%;
+ border-radius: 190px 0px 190px 190px;
   height: 300px;
+  /* margin: 10px; */
+}
+
+#home a{
+  margin: 0 15px;
 }
 
 /* about and work section */
@@ -156,10 +170,22 @@ header {
   margin-bottom: 10rem;
 }
 
-.about .grid-2 li {
-  list-style: none;
+.about .grid-2 img {
+  width: 600px;
+  height: 400px;
 }
 
+.about .grid-2 h2, h4{
+  text-align: left;
+  color: var(--secondary-color);
+}
+
+.about #statement{
+  border-left: 5px solid var(--primary-color);
+  text-align:left;
+  padding-left: 15px;
+  font-family: 'Courgette';
+  } 
 .about i {
   border: 2px solid var(--secondary-color);
   border-radius: 50%;
