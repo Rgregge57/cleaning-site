@@ -1,114 +1,129 @@
-
 /* ipad landscape view */
-@media screen and (max-width: 1080px){
-    .container {
-        width: 960px;
-      }
-      section{
-        font-size: 1.8rem;
-      }
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 960px;
+  }
+  section {
+    font-size: 1.8rem;
+  }
 
-      .title{
-        font-size: 2rem;
-        text-align: center;
-      }
+  .title {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-      .grid-2,
-      .grid-3
-      {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin: auto;
-      }
+  .grid-2,
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
 
-      .services .grid-2 li{
-        text-align: center;
-      }
-
-      .gallery{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .clients p {
-        font-size: 1.1rem;
-        padding: 1.5rem ;
-        margin-top: 1.5rem;
-      }
-      
-    }
-
-    /* ipad portrait view  */
-
-    @media screen and (max-width: 815px){
-      .container {
-        width: 760px;
-      }
-    }
-
-    /* mobile phone portrait */
-    @media screen and (max-width: 428px){
-      .container {
-        width: 310px;
-      }
-      section{
-        font-size: 1.2rem;
-      }
-
-      .nav {
-        display: flex;
-        flex-direction: column;
-        height: 35vh;
-        justify-content: flex-start;
-      }
-
-      .nav a{
-        margin: 0;
-        padding:0.5rem
-      }
-      .nav img{
-        height: 250px;
-        width: 250px;
-        margin-left: auto;
-       
-      }
-
-      .services .grid-2 li{
-        text-align: left;
-        padding-left: 2rem;
-      }
-
-      .gallery{
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      
-     
-      .clients img {
-        height: 250px;
-        border-radius: 50%;
-        border: var(--secondary-color) 4px solid;
-      
-      }
-      
-      .clients p {
-        font-size: 1rem;
-        padding: 1.5rem 1rem;
-        margin-top: 1.5rem;
-      }
-    }
-
-    /* mobile landscape */
+  .services .grid-2 li {
+    text-align: center;
     
-    @media screen and (max-height: 450px){
-      .nav{
-        height: 30vh;
-      }
+  }
 
-      .nav img{
-        height: 150px;
-      }
-    }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .clients p {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
 
+/* ipad portrait view  */
+
+@media screen and (max-width: 815px) {
+  .container {
+    width: 760px;
+  }
+}
+
+/* mobile phone portrait */
+@media screen and (max-width: 428px) {
+  .container {
+    width: 310px;
+  }
+  section {
+    font-size: 1.2rem;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .nav img {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+  }
+
+  #top{
+    margin-top: 7rem;
+  }
+
+  .services .grid-2 li {
+    margin: auto;
+    list-style: none;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about #statement {
+    border-left: 5px solid var(--primary-color);
+    text-align: center;
+    margin: 0 2rem;
+    padding: 0 3.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about .grid-2 h2,
+  h4 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .clients img {
+    height: 250px;
+    width: 280px;
+    border: var(--secondary-color) 4px solid;
+  }
+
+  .clients p {
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .form {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+/* mobile landscape */
+
+@media screen and (max-height: 450px) {
+  .nav {
+    height: 30vh;
+  }
+
+  .nav img {
+    height: 150px;
+  }
+}
