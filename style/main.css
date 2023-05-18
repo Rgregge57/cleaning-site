@@ -284,14 +284,19 @@ h4 {
 }
 
 
-
+.form
+{
+  background-color: var(--secondary-color);
+  width: 70%;
+  padding: 2rem;
+}
 
 
 
 
 .form input,
 .form label {
-  display: block;
+  display:block;
   margin: auto;
   padding: 0.5rem;
 }
