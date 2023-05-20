@@ -113,8 +113,8 @@
 
   .form {
     width: 80%;
-   margin: auto;
-   margin-top: 2rem;
+   margin: 2rem auto;
+   
   }
 
   input[type="text"],
