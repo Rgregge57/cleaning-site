@@ -45,7 +45,7 @@
 }
 
 /* mobile phone portrait */
-@media screen and (max-width: 428px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 428px) {
   .container {
     width: 310px;
   }
@@ -53,27 +53,34 @@
     font-size: 1.2rem;
   }
 
-  .nav {
+
+  .nav{
     display: flex;
     flex-direction: column;
-    height: 35vh;
     justify-content: flex-start;
   }
 
   .nav a {
     margin: 0;
     padding: 0.5rem;
+    
+  
   }
   .nav img {
-    height: 250px;
-    width: 250px;
-    margin-left: auto;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin-left: 13rem;
   }
 
   #top{
     margin-top: 15rem;
   }
 
+
+  .wrapper #home{
+    height: 80vh;
+  }
   .services .grid-2 li {
     margin: auto;
     list-style: none;
